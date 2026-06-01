@@ -1,0 +1,49 @@
+name: CI/CD Pipeline - Run Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Run tests with Maven
+      run: mvn clean test --file index/pom.xml
+
+    - name: Generate test coverage report
+      run: mvn jacoco:report --file index/pom.xml
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./index/target/site/jacoco/jacoco.xml
+        fail_ci_if_error: false
+        verbose: true
+
+    - name: Display test results
+      if: always()
+      run: |
+        echo "Test Summary:"
+        ls -la index/target/surefire-reports/ || echo "No test reports found"
+
+    - name: Publish Test Report
+      if: always()
+      uses: dorny/test-reporter@v1
+      with:
+        name: JUnit Tests
+        path: 'index/target/surefire-reports/TEST-*.xml'
+        reporter: 'java-junit'
+        fail-on-error: false

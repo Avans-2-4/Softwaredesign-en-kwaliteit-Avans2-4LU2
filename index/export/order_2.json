@@ -1,0 +1,31 @@
+{
+  "orderId": 2,
+  "isStudentOrder": false,
+  "tickets": [
+    {
+      "ticketNumber": 1,
+      "movie": "Avatar 2",
+      "screening": "2024-06-03T19:30",
+      "seating": "Row 5, Seat 1",
+      "isPremium": false,
+      "basePrice": 10.0
+    },
+    {
+      "ticketNumber": 2,
+      "movie": "Avatar 2",
+      "screening": "2024-06-03T19:30",
+      "seating": "Row 5, Seat 2",
+      "isPremium": true,
+      "basePrice": 10.0
+    },
+    {
+      "ticketNumber": 3,
+      "movie": "Avatar 2",
+      "screening": "2024-06-03T19:30",
+      "seating": "Row 5, Seat 3",
+      "isPremium": false,
+      "basePrice": 10.0
+    }
+  ],
+  "totalPrice": 20.0
+}

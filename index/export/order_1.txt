@@ -1,0 +1,22 @@
+=== CINEMA ORDER #1 ===
+Order Type: Student
+Number of Tickets: 2
+---
+
+Ticket 1:
+  Movie: Avatar 2
+  Screening: 2024-06-03T19:30
+  Seating: Row 5, Seat 10
+  Type: Standard
+  Base Price: €10.0
+
+Ticket 2:
+  Movie: Avatar 2
+  Screening: 2024-06-03T19:30
+  Seating: Row 5, Seat 11
+  Type: Standard
+  Base Price: €10.0
+
+---
+TOTAL PRICE: €10.00
+===================

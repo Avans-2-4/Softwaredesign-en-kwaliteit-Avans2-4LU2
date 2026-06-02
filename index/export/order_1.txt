@@ -5,18 +5,18 @@ Number of Tickets: 2
 
 Ticket 1:
   Movie: Avatar 2
-  Screening: 2024-06-03T19:30
+  Screening: 2026-06-08T19:30
   Seating: Row 5, Seat 10
   Type: Standard
-  Base Price: €10.0
+  Base Price: €100.0
 
 Ticket 2:
   Movie: Avatar 2
-  Screening: 2024-06-03T19:30
+  Screening: 2026-06-08T19:30
   Seating: Row 5, Seat 11
   Type: Standard
-  Base Price: €10.0
+  Base Price: €100.0
 
 ---
-TOTAL PRICE: €10.00
+TOTAL PRICE: €100.00
 ===================

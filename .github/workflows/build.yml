@@ -32,11 +32,7 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-      - name: Change to index directory
-        run: cd index
-      - name: List files as debug
-        run: ls
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Avans-2-4_Softwaredesign-en-kwaliteit-Avans2-4LU2
+        run: cd index && mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Avans-2-4_Softwaredesign-en-kwaliteit-Avans2-4LU2

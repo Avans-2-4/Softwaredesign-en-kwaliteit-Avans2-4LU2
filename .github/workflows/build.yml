@@ -34,6 +34,8 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Change to index directory
         run: cd index
+      - name: List files as debug
+        run: ls
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

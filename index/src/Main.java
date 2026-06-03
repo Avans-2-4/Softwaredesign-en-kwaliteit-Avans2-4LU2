@@ -15,21 +15,21 @@ public class Main {
         // Monday screening (weekday)
         MovieScreening screening1 = new MovieScreening(
                 movie1,
-                LocalDateTime.of(2024, 6, 3, 19, 30), // Monday
-                10.0
+                LocalDateTime.of(2026, 6, 8, 19, 30), // Monday
+                100
         );
 
         // Saturday screening (weekend)
         MovieScreening screening2 = new MovieScreening(
                 movie1,
-                LocalDateTime.of(2024, 6, 8, 20, 0), // Saturday
-                12.0
+                LocalDateTime.of(2026, 6, 6, 20, 0), // Saturday
+                100
         );
 
         MovieScreening screening3 = new MovieScreening(
                 movie2,
-                LocalDateTime.of(2024, 6, 8, 18, 0), // Saturday
-                11.0
+                LocalDateTime.of(2026, 6, 6, 18, 0), // Saturday
+                100
         );
 
         movie1.addScreening(screening1);

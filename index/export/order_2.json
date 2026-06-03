@@ -5,27 +5,27 @@
     {
       "ticketNumber": 1,
       "movie": "Avatar 2",
-      "screening": "2024-06-03T19:30",
+      "screening": "2026-06-08T19:30",
       "seating": "Row 5, Seat 1",
       "isPremium": false,
-      "basePrice": 10.0
+      "basePrice": 100.0
     },
     {
       "ticketNumber": 2,
       "movie": "Avatar 2",
-      "screening": "2024-06-03T19:30",
+      "screening": "2026-06-08T19:30",
       "seating": "Row 5, Seat 2",
       "isPremium": true,
-      "basePrice": 10.0
+      "basePrice": 100.0
     },
     {
       "ticketNumber": 3,
       "movie": "Avatar 2",
-      "screening": "2024-06-03T19:30",
+      "screening": "2026-06-08T19:30",
       "seating": "Row 5, Seat 3",
       "isPremium": false,
-      "basePrice": 10.0
+      "basePrice": 100.0
     }
   ],
-  "totalPrice": 20.0
+  "totalPrice": 200.0
 }

@@ -8,5 +8,8 @@
     <artifactId>softwaredesign-en-kwaliteit</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>softwaredesign-en-kwaliteit</name>
+    <properties>
+        <sonar.organization>avans-2-4</sonar.organization>
+    </properties>
 
 </project>

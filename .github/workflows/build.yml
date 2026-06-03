@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - opdracht-2
+      - "opdracht-2"
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
